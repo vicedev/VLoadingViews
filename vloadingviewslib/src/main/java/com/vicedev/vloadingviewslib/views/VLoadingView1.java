@@ -59,9 +59,9 @@ public class VLoadingView1 extends View {
 
         if (context != null && attrs != null) {
             TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.VLoadingView1);
-            mRectangleColor = typedArray.getColor(R.styleable.VLoadingView1_rectangleColor, Color.WHITE);
-            mRectangleWidth = (int) typedArray.getDimension(R.styleable.VLoadingView1_rectangleWidth, mRectangleWidth);
-            mTotalDuration = typedArray.getInt(R.styleable.VLoadingView1_totalDuration, mTotalDuration);
+            mRectangleColor = typedArray.getColor(R.styleable.VLoadingView1_rectangle_color, Color.WHITE);
+            mRectangleWidth = (int) typedArray.getDimension(R.styleable.VLoadingView1_rectangle_width, mRectangleWidth);
+            mTotalDuration = typedArray.getInt(R.styleable.VLoadingView1_total_duration, mTotalDuration);
             typedArray.recycle();
         }
 
