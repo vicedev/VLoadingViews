@@ -1,5 +1,5 @@
 # VLoadingViews
-Some nice loading views on Android imitate [SpinKit](https://github.com/tobiasahlin/SpinKit) （In development）.
+Some nice loading views on Android imitate [SpinKit](https://github.com/tobiasahlin/SpinKit) （in development）.
 
 | Picture                                      | Code                                                         |
 | -------------------------------------------- | ------------------------------------------------------------ |
