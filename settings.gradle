@@ -1,0 +1,2 @@
+include ':app', ':vloadingviewslib'
+rootProject.name='VLoadingViews'
