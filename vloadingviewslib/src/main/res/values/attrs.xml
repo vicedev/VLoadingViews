@@ -2,9 +2,9 @@
 <resources>
 
     <declare-styleable name="VLoadingView1">
-        <attr name="rectangleColor" format="color" />
-        <attr name="rectangleWidth" format="dimension" />
-        <attr name="totalDuration" format="integer" />
+        <attr name="rectangle_color" format="color" />
+        <attr name="rectangle_width" format="dimension" />
+        <attr name="total_duration" format="integer" />
     </declare-styleable>
 
 </resources>
