@@ -14,6 +14,7 @@ import androidx.annotation.Nullable;
 
 import com.vicedev.vloadingviewslib.R;
 import com.vicedev.vloadingviewslib.utils.DensityUtil;
+import com.vicedev.vloadingviewslib.utils.ViewUtils;
 
 /**
  * @author vicedev
@@ -24,17 +25,17 @@ public class VLoadingView0 extends View {
     private ObjectAnimator mObjectAnimatorY = new ObjectAnimator();
     private AnimatorSet mAnimatorSet;
     /**
-     * 矩形的颜色
+     * the color of rectangle
      */
     private int mRectangleColor = Color.WHITE;
 
     /**
-     * 矩形的默认宽度
+     * the default size of rectangle
      */
     private int mDefaultSize;
 
     /**
-     * 一次动画的总时间（毫秒）
+     * total time(millisecond)
      */
     private int mTotalDuration = 1200;
 
@@ -103,17 +104,7 @@ public class VLoadingView0 extends View {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        int wMode = MeasureSpec.getMode(widthMeasureSpec);
-        int hMode = MeasureSpec.getMode(heightMeasureSpec);
-        int width = MeasureSpec.getSize(widthMeasureSpec);
-        int height = MeasureSpec.getSize(heightMeasureSpec);
-        if (wMode == MeasureSpec.AT_MOST || wMode == MeasureSpec.UNSPECIFIED) {
-            width = mDefaultSize;
-        }
-        if (hMode == MeasureSpec.AT_MOST || hMode == MeasureSpec.UNSPECIFIED) {
-            height = mDefaultSize;
-        }
-        int value = Math.min(width, height);
+        int value = ViewUtils.measureMinSize(this, widthMeasureSpec, heightMeasureSpec, mDefaultSize);
         setMeasuredDimension(value, value);
     }
 

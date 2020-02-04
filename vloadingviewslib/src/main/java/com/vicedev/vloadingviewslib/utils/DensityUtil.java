@@ -8,28 +8,28 @@ import android.content.res.Resources;
  */
 public class DensityUtil {
     /**
-     * 根据手机的分辨率从 dp 的单位 转成为 px(像素)
+     * dp->px
      */
     public static int dp2px(float dpValue) {
         return (int) (0.5f + dpValue * Resources.getSystem().getDisplayMetrics().density);
     }
 
     /**
-     * 根据手机的分辨率从 px(像素) 的单位 转成为 dp
+     * px->dp
      */
     public static float px2dp(float pxValue) {
         return (pxValue / Resources.getSystem().getDisplayMetrics().density);
     }
 
     /**
-     * 根据手机的分辨率获取宽度像素
+     * screen width(px)
      */
     public static float getScreenWidth() {
         return Resources.getSystem().getDisplayMetrics().widthPixels;
     }
 
     /**
-     * 根据手机的分辨率获取高度像素
+     * screen height(px)
      */
     public static float getScreenHeight() {
         return Resources.getSystem().getDisplayMetrics().heightPixels;

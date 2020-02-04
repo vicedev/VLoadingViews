@@ -15,6 +15,7 @@ import androidx.annotation.Nullable;
 
 import com.vicedev.vloadingviewslib.R;
 import com.vicedev.vloadingviewslib.utils.DensityUtil;
+import com.vicedev.vloadingviewslib.utils.ViewUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -76,18 +77,7 @@ public class VLoadingView1 extends View {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-        int wMode = MeasureSpec.getMode(widthMeasureSpec);
-        int hMode = MeasureSpec.getMode(heightMeasureSpec);
-        int width = MeasureSpec.getSize(widthMeasureSpec);
-        int height = MeasureSpec.getSize(heightMeasureSpec);
-        if (wMode == MeasureSpec.AT_MOST || wMode == MeasureSpec.UNSPECIFIED) {
-            width = mDefaultSize;
-        }
-        if (hMode == MeasureSpec.AT_MOST || hMode == MeasureSpec.UNSPECIFIED) {
-            height = mDefaultSize;
-        }
-        int value = Math.min(width, height);
+        int value = ViewUtils.measureMinSize(this, widthMeasureSpec, heightMeasureSpec, mDefaultSize);
         setMeasuredDimension(value, value);
     }
 
