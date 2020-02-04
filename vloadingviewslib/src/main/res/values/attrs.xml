@@ -3,7 +3,6 @@
 
     <declare-styleable name="VLoadingView0">
         <attr name="rectangle_color" format="color" />
-        <attr name="rectangle_width" format="dimension" />
         <attr name="total_duration" format="integer" />
     </declare-styleable>
 

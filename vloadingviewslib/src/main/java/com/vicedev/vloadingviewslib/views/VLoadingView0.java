@@ -6,7 +6,6 @@ import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Color;
-import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
@@ -21,7 +20,6 @@ import com.vicedev.vloadingviewslib.utils.DensityUtil;
  * @date 2020/2/3 18:50
  */
 public class VLoadingView0 extends View {
-    private Rect mRect = new Rect();
     private ObjectAnimator mObjectAnimatorX = new ObjectAnimator();
     private ObjectAnimator mObjectAnimatorY = new ObjectAnimator();
     private AnimatorSet mAnimatorSet;
@@ -31,9 +29,9 @@ public class VLoadingView0 extends View {
     private int mRectangleColor = Color.WHITE;
 
     /**
-     * 矩形的宽度
+     * 矩形的默认宽度
      */
-    private int mRectangleWidth;
+    private int mDefaultSize;
 
     /**
      * 一次动画的总时间（毫秒）
@@ -55,12 +53,11 @@ public class VLoadingView0 extends View {
     }
 
     private void init(Context context, AttributeSet attrs) {
-        mRectangleWidth = DensityUtil.dp2px(50);
+        mDefaultSize = DensityUtil.dp2px(50);
 
         if (context != null && attrs != null) {
             TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.VLoadingView0);
             mRectangleColor = typedArray.getColor(R.styleable.VLoadingView0_rectangle_color, Color.WHITE);
-            mRectangleWidth = (int) typedArray.getDimension(R.styleable.VLoadingView0_rectangle_width, mRectangleWidth);
             mTotalDuration = typedArray.getInt(R.styleable.VLoadingView0_total_duration, mTotalDuration);
             typedArray.recycle();
         }
@@ -111,24 +108,14 @@ public class VLoadingView0 extends View {
         int width = MeasureSpec.getSize(widthMeasureSpec);
         int height = MeasureSpec.getSize(heightMeasureSpec);
         if (wMode == MeasureSpec.AT_MOST || wMode == MeasureSpec.UNSPECIFIED) {
-            width = mRectangleWidth;
+            width = mDefaultSize;
         }
         if (hMode == MeasureSpec.AT_MOST || hMode == MeasureSpec.UNSPECIFIED) {
-            height = mRectangleWidth;
+            height = mDefaultSize;
         }
         int value = Math.min(width, height);
         setMeasuredDimension(value, value);
     }
-
-    @Override
-    protected void onSizeChanged(int w, int h, int oldw, int oldh) {
-        int rectangleWidth = Math.min(w, h);
-        mRect.left = (int) ((w - rectangleWidth) / 2.0);
-        mRect.top = (int) ((h - rectangleWidth) / 2.0);
-        mRect.right = w - mRect.left;
-        mRect.bottom = h - mRect.top;
-    }
-
 
     @Override
     protected void onAttachedToWindow() {
