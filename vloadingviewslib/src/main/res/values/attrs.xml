@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <declare-styleable name="VLoadingView1">
+    <declare-styleable name="VLoadingView0">
         <attr name="rectangle_color" format="color" />
         <attr name="rectangle_width" format="dimension" />
         <attr name="total_duration" format="integer" />

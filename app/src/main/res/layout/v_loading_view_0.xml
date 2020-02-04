@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="#d35400">
 
-    <com.vicedev.vloadingviewslib.views.VLoadingView1
+    <com.vicedev.vloadingviewslib.views.VLoadingView0
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center" />

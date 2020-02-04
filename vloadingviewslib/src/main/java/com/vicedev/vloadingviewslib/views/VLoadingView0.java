@@ -20,7 +20,7 @@ import com.vicedev.vloadingviewslib.utils.DensityUtil;
  * @author vicedev
  * @date 2020/2/3 18:50
  */
-public class VLoadingView1 extends View {
+public class VLoadingView0 extends View {
     private Rect mRect = new Rect();
     private ObjectAnimator mObjectAnimatorX = new ObjectAnimator();
     private ObjectAnimator mObjectAnimatorY = new ObjectAnimator();
@@ -41,15 +41,15 @@ public class VLoadingView1 extends View {
     private int mTotalDuration = 1200;
 
 
-    public VLoadingView1(Context context) {
+    public VLoadingView0(Context context) {
         this(context, null);
     }
 
-    public VLoadingView1(Context context, @Nullable AttributeSet attrs) {
+    public VLoadingView0(Context context, @Nullable AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public VLoadingView1(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public VLoadingView0(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(context, attrs);
     }
@@ -58,10 +58,10 @@ public class VLoadingView1 extends View {
         mRectangleWidth = DensityUtil.dp2px(50);
 
         if (context != null && attrs != null) {
-            TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.VLoadingView1);
-            mRectangleColor = typedArray.getColor(R.styleable.VLoadingView1_rectangle_color, Color.WHITE);
-            mRectangleWidth = (int) typedArray.getDimension(R.styleable.VLoadingView1_rectangle_width, mRectangleWidth);
-            mTotalDuration = typedArray.getInt(R.styleable.VLoadingView1_total_duration, mTotalDuration);
+            TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.VLoadingView0);
+            mRectangleColor = typedArray.getColor(R.styleable.VLoadingView0_rectangle_color, Color.WHITE);
+            mRectangleWidth = (int) typedArray.getDimension(R.styleable.VLoadingView0_rectangle_width, mRectangleWidth);
+            mTotalDuration = typedArray.getInt(R.styleable.VLoadingView0_total_duration, mTotalDuration);
             typedArray.recycle();
         }
 

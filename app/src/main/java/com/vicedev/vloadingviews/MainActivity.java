@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void initData() {
         mViewLayoutList = new ArrayList<>();
-        mViewLayoutList.add(R.layout.v_loading_view_1);
+        mViewLayoutList.add(R.layout.v_loading_view_0);
 
         mAdapter.notifyDataSetChanged();
     }
