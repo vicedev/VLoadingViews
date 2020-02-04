@@ -6,4 +6,8 @@
         <attr name="total_duration" format="integer" />
     </declare-styleable>
 
+    <declare-styleable name="VLoadingView1">
+        <attr name="maximum_circle_radius" format="dimension" />
+    </declare-styleable>
+
 </resources>
