@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <attr name="circle_color" format="color" />
+
     <declare-styleable name="VLoadingView0">
         <attr name="rectangle_color" format="color" />
         <attr name="total_duration" format="integer" />
@@ -8,7 +10,11 @@
 
     <declare-styleable name="VLoadingView1">
         <attr name="maximum_circle_radius" format="dimension" />
-        <attr name="circle_color" format="color" />
+        <attr name="circle_color" />
+    </declare-styleable>
+
+    <declare-styleable name="VLoadingView2">
+        <attr name="circle_color" />
     </declare-styleable>
 
 </resources>
