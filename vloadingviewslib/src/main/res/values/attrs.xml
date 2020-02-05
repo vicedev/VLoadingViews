@@ -17,4 +17,10 @@
         <attr name="circle_color" />
     </declare-styleable>
 
+    <declare-styleable name="VLoadingView3">
+        <attr name="bar_color" format="color" />
+        <attr name="bar_count" format="integer" />
+        <attr name="bar_divide_size" format="dimension" />
+    </declare-styleable>
+
 </resources>

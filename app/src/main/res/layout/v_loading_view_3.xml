@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1abc9c">
+    android:background="#2980b9">
 
-    <com.vicedev.vloadingviewslib.views.VLoadingView2
+    <com.vicedev.vloadingviewslib.views.VLoadingView3
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center" />
+        android:layout_gravity="center"
+        app:bar_color="#ffffff"
+        app:bar_count="5"
+        app:bar_divide_size="3dp" />
 </FrameLayout>
