@@ -56,7 +56,7 @@ public class VLoadingView3 extends View {
             TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.VLoadingView3);
             mBarColor = typedArray.getColor(R.styleable.VLoadingView3_bar_color, mBarColor);
             mBarCount = typedArray.getInt(R.styleable.VLoadingView3_bar_count, mBarCount);
-            mBarDivideSize = typedArray.getDimension(R.styleable.VLoadingView3_bar_divide_size, mBarDivideSize);
+            mBarDivideSize = typedArray.getDimension(R.styleable.VLoadingView3_bar_spacing_size, mBarDivideSize);
             typedArray.recycle();
         }
 
