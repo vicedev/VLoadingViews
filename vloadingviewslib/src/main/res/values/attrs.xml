@@ -29,4 +29,8 @@
         <attr name="min_rect_side_size" format="dimension" />
     </declare-styleable>
 
+    <declare-styleable name="VLoadingView5">
+        <attr name="circle_color" />
+    </declare-styleable>
+
 </resources>
