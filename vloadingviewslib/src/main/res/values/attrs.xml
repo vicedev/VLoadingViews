@@ -37,4 +37,10 @@
         <attr name="circle_color" />
     </declare-styleable>
 
+    <declare-styleable name="VLoadingView7">
+        <attr name="circle_color" />
+        <attr name="circle_count" format="integer" />
+        <attr name="per_circle_spacing_size" format="dimension" />
+    </declare-styleable>
+
 </resources>
