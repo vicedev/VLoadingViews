@@ -9,7 +9,7 @@
     </declare-styleable>
 
     <declare-styleable name="VLoadingView1">
-        <attr name="maximum_circle_radius" format="dimension" />
+        <attr name="max_circle_radius" format="dimension" />
         <attr name="circle_color" />
     </declare-styleable>
 

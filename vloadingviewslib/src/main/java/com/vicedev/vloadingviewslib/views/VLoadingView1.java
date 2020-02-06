@@ -52,7 +52,7 @@ public class VLoadingView1 extends View {
 
         if (context != null && attrs != null) {
             TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.VLoadingView1);
-            mMaximumCircleRadius = typedArray.getDimension(R.styleable.VLoadingView1_maximum_circle_radius, mMaximumCircleRadius);
+            mMaximumCircleRadius = typedArray.getDimension(R.styleable.VLoadingView1_max_circle_radius, mMaximumCircleRadius);
             mCircleColor = typedArray.getColor(R.styleable.VLoadingView1_circle_color, mCircleColor);
             typedArray.recycle();
         }
