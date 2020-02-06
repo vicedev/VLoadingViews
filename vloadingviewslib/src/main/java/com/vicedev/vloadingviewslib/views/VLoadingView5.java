@@ -59,7 +59,7 @@ public class VLoadingView5 extends View {
         mPaint.setColor(mCircleColor);
 
         mValueAnimator = ValueAnimator.ofFloat(0.0f, 1.0f);
-        mValueAnimator.setDuration(1000);
+        mValueAnimator.setDuration(800);
         mValueAnimator.setInterpolator(new AccelerateInterpolator());
         mValueAnimator.setStartDelay(200);
         mValueAnimator.addListener(new AnimatorListenerAdapter() {
