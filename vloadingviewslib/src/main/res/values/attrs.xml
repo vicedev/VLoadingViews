@@ -2,6 +2,7 @@
 <resources>
 
     <attr name="circle_color" format="color" />
+    <attr name="max_circle_radius" format="dimension" />
 
     <declare-styleable name="VLoadingView0">
         <attr name="rectangle_color" format="color" />
@@ -9,7 +10,7 @@
     </declare-styleable>
 
     <declare-styleable name="VLoadingView1">
-        <attr name="max_circle_radius" format="dimension" />
+        <attr name="max_circle_radius" />
         <attr name="circle_color" />
     </declare-styleable>
 
@@ -41,6 +42,12 @@
         <attr name="circle_color" />
         <attr name="circle_count" format="integer" />
         <attr name="per_circle_spacing_size" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="VLoadingView8">
+        <attr name="circle_color" />
+        <attr name="max_circle_radius" />
+        <attr name="anim_duration" format="integer" />
     </declare-styleable>
 
 </resources>

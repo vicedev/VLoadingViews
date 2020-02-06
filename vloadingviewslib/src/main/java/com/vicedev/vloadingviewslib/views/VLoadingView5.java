@@ -20,7 +20,7 @@ import com.vicedev.vloadingviewslib.utils.ViewUtils;
 
 /**
  * @author vicedev
- * @date 2020/2/5 9:28
+ * @date 2020/2/6 9:28
  */
 public class VLoadingView5 extends View {
 
