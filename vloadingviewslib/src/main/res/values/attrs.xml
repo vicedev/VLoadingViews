@@ -3,9 +3,10 @@
 
     <attr name="circle_color" format="color" />
     <attr name="max_circle_radius" format="dimension" />
+    <attr name="rect_color" format="color" />
 
     <declare-styleable name="VLoadingView0">
-        <attr name="rectangle_color" format="color" />
+        <attr name="rect_color" />
         <attr name="total_duration" format="integer" />
     </declare-styleable>
 
@@ -25,7 +26,7 @@
     </declare-styleable>
 
     <declare-styleable name="VLoadingView4">
-        <attr name="rect_color" format="color" />
+        <attr name="rect_color" />
         <attr name="max_rect_side_size" format="dimension" />
         <attr name="min_rect_side_size" format="dimension" />
     </declare-styleable>
@@ -51,7 +52,7 @@
     </declare-styleable>
 
     <declare-styleable name="VLoadingView9">
-        <attr name="circle_color" />
+        <attr name="rect_color" />
     </declare-styleable>
 
 </resources>

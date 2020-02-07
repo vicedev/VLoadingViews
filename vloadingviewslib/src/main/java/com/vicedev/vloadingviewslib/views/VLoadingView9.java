@@ -27,7 +27,7 @@ import java.util.List;
 public class VLoadingView9 extends View {
 
     private int mDefaultSize;
-    private int mCircleColor = Color.WHITE;
+    private int mRectColor = Color.WHITE;
     private Paint mPaint;
     private ValueAnimator mValueAnimator;
     private long mAnimTime = 900;
@@ -54,14 +54,14 @@ public class VLoadingView9 extends View {
 
         if (context != null && attrs != null) {
             TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.VLoadingView9);
-            mCircleColor = typedArray.getColor(R.styleable.VLoadingView9_circle_color, mCircleColor);
+            mRectColor = typedArray.getColor(R.styleable.VLoadingView9_rect_color, mRectColor);
             typedArray.recycle();
         }
 
 
         mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         mPaint.setStyle(Paint.Style.FILL);
-        mPaint.setColor(mCircleColor);
+        mPaint.setColor(mRectColor);
 
         long totalTime = mAnimTime + mDelayTime;
         mValueAnimator = ValueAnimator.ofFloat(0.0f, totalTime);

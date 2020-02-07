@@ -27,7 +27,7 @@ public class VLoadingView0 extends View {
     /**
      * the color of rectangle
      */
-    private int mRectangleColor = Color.WHITE;
+    private int mRectColor = Color.WHITE;
 
     /**
      * the default size of rectangle
@@ -58,12 +58,12 @@ public class VLoadingView0 extends View {
 
         if (context != null && attrs != null) {
             TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.VLoadingView0);
-            mRectangleColor = typedArray.getColor(R.styleable.VLoadingView0_rectangle_color, Color.WHITE);
+            mRectColor = typedArray.getColor(R.styleable.VLoadingView0_rect_color, Color.WHITE);
             mTotalDuration = typedArray.getInt(R.styleable.VLoadingView0_total_duration, mTotalDuration);
             typedArray.recycle();
         }
 
-        setBackgroundColor(mRectangleColor);
+        setBackgroundColor(mRectColor);
 
         mObjectAnimatorX.setInterpolator(new LinearInterpolator());
         mObjectAnimatorX.setDuration((long) (mTotalDuration / 2.0f));
