@@ -55,4 +55,9 @@
         <attr name="rect_color" />
     </declare-styleable>
 
+    <declare-styleable name="VLoadingView10">
+        <attr name="circle_color" />
+        <attr name="circle_radius" format="dimension" />
+    </declare-styleable>
+
 </resources>
