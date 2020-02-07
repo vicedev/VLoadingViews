@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
         mViewLayoutList.add(R.layout.v_loading_view_6);
         mViewLayoutList.add(R.layout.v_loading_view_7);
         mViewLayoutList.add(R.layout.v_loading_view_8);
+        mViewLayoutList.add(R.layout.v_loading_view_9);
 
         mAdapter.notifyDataSetChanged();
     }

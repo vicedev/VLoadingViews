@@ -12,4 +12,5 @@ Some nice loading views on Android imitate [SpinKit](https://github.com/tobiasah
 | ![VLoadingView0](./images/VLoadingView6.gif) | VLoadingView6 | app:circle_color="#ffffff"                                   |
 | ![VLoadingView0](./images/VLoadingView7.gif) | VLoadingView7 | app:circle_color="#ffffff"<br/>app:circle_count="3"<br/>app:per_circle_spacing_size="5dp" |
 | ![VLoadingView0](./images/VLoadingView8.gif) | VLoadingView8 | app:anim_duration="800"<br/>app:circle_color="#ffffff"<br/>app:max_circle_radius="4dp" |
+| ![VLoadingView0](./images/VLoadingView9.gif) | VLoadingView9 | app:circle_color="#ffffff"                                   |
 
